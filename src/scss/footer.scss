@@ -1,0 +1,89 @@
+/* ## Div of Or log in with ## */
+#title {
+    width: 80vw;
+    display: flex;
+    margin: auto;
+/* ## Div of Text ## */
+    #titlelogwith {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    @mixin bar {
+        content: " ";
+        display: inline-block;
+        width: 10rem;
+        height: 0.1rem;
+        border: 0.1px solid rgba($color: #000000, $alpha: .2);
+    }
+/* ## Line before and after the text ## */
+    #logwith:before {
+        @include bar();
+        margin-right: 1rem;
+    }
+
+    #logwith:after {
+        @include bar();
+        margin-left: 1rem;
+    }
+}
+/* ## Login Buttons ## */
+#buttonslog {
+    display: inline-block;
+    width: 80vw;
+    margin: auto;
+    border: 0px solid;
+    outline: none;
+    display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    justify-content: space-around;
+
+    @mixin buttonlog {
+        width: 30vw;
+        height: 4rem;
+        border-radius: 3rem;
+        padding: 0 1rem 0 1rem;
+        border: none;
+    }
+
+    /* ## Buttons Settings ## */
+    #loggoogle {
+        color: black;
+        background-color: white;
+        @include buttonlog
+    }
+
+    #logfacebook {
+        @include buttonlog();
+        color: white;
+        background-color: #3b5998;
+
+        /* ## LogoFacebook ## */
+        img {
+            filter: invert(1);
+        }
+    }
+
+    /* ## All Logo ## */
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* ## Button ## */
+    button {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+}
+/* ## Sign up text ## */
+p {
+    text-align: center;
+}

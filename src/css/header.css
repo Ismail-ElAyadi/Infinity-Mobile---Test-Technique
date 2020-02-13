@@ -1,0 +1,101 @@
+/* 1rem = 10 px */
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  outline: none;
+}
+
+/* ############ Header Background Style ############ */
+#header {
+  background: linear-gradient(141deg, #8e77e6, rgba(63, 45, 221, 0.7));
+  border-radius: 3rem 3rem 0rem 3rem;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+/* ## Circle in the Background ##  */
+#header::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  height: 28rem;
+  width: 28rem;
+  color: white;
+  border: 5rem solid rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
+  top: -26rem;
+  left: -18rem;
+}
+
+#header::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  height: 28rem;
+  width: 28rem;
+  color: white;
+  border: 5rem solid rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
+  bottom: -25rem;
+  right: -21rem;
+}
+
+/*## Header arrow ##*/
+.button-top {
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: 0;
+  position: absolute;
+  border-radius: 1rem;
+  border: none;
+  top: 5rem;
+  right: 30rem;
+}
+
+.arrow-left {
+  background-image: url("../svg/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 1.7rem;
+  background-position: center;
+  color: black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*## Header texts ##*/
+#text-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10rem;
+}
+
+.loginText {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.welcomeText {
+  color: white;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=header.css.map */

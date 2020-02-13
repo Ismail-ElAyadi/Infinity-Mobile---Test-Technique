@@ -1,0 +1,100 @@
+/* 1rem = 10 px */
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    outline: none;
+}
+
+/* ############ Header Background Style ############ */
+$color1: rgba(142, 119, 230, 1);
+$color2: rgba(63, 45, 221, 0.7);
+$colorText1: white;
+
+#header {
+    background: -webkit-linear-gradient(141deg, $color1, $color2);
+    background: linear-gradient(141deg, $color1, $color2);
+    border-radius: 3rem 3rem 0rem 3rem;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+/* ## Circle in the Background ##  */
+$bgCircleSize: 28rem;
+$bgCircleBorder: 5rem solid rgba(255, 255, 255, 0.1);
+$circleOpacity: 0.5;
+$circleColor: white;
+
+@mixin circleDefault {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    height: $bgCircleSize;
+    width: $bgCircleSize;
+    color: $circleColor;
+    border: $bgCircleBorder;
+    opacity: $circleOpacity;
+}
+
+#header::before {
+    @include circleDefault();
+    top: -26rem;
+    left: -18rem;
+}
+
+#header::after {
+    @include circleDefault();
+    bottom: -25rem;
+    right: -21rem;
+}
+
+/*## Header arrow ##*/
+$sizeButton: 3.5rem;
+
+.button-top {
+    height: $sizeButton;
+    width: $sizeButton;
+    padding: 0;
+    position: absolute;
+    border-radius: 1rem;
+    border: none;
+    top: 5rem;
+    right: 30rem;
+}
+
+.arrow-left {
+    background-image: url("../svg/left-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 1.7rem;
+    background-position: center;
+    color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*## Header texts ##*/
+#text-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    top: 10rem;
+}
+
+.loginText {
+    font-size: 3rem;
+    color: $colorText1;
+    margin-bottom: 0;
+}
+
+.welcomeText {
+    color: $colorText1;
+    font-size: 1.3rem;
+}

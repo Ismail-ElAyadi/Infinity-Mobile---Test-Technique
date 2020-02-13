@@ -1,0 +1,99 @@
+/* ## All Form's Links ## */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+/* ## Basics Color ## */
+#formLogin {
+  padding: 0 2rem 0 2rem;
+}
+
+/* ## Input Information ## */
+#askEmail,
+#askPswd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#askEmail input,
+#askPswd input {
+  margin-top: 0.01rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 80%;
+}
+
+#askEmail:focus-within,
+#askPswd:focus-within {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+/* ## EYE TO HIDE OR SHOW PSWD ## */
+img.hidePswd {
+  height: 2rem;
+  width: 2rem;
+  opacity: .6;
+}
+
+/* ## Remember Text ## */
+#remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*## Remember Input ##*/
+#rememberInput {
+  margin: 0;
+  width: 3rem !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ## Div of Login Button ## */
+#buttonlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* ## Button Login ## */
+#login {
+  background: linear-gradient(141deg, #8e77e6, rgba(63, 45, 221, 0.7));
+  width: 80vw;
+  padding: 1rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border: none;
+}
+/*# sourceMappingURL=form.css.map */

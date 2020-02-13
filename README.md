@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Test Techniques Infinity Mobile
 
-## Available Scripts
+Test Technique de chez Infinity mobile en vue d'obtenir un stage.
 
-In the project directory, you can run:
+Temps de réalisation : Entre 5H et 6H
 
-### `npm start`
+### Objectif: réalisé cette maquette mobile.
+ ![maquette](https://i.ibb.co/xJPYPF9/test-decoupe-2.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Le résultat :
+ ![resultat](https://i.ibb.co/HTN9Lgn/test-infinity.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+##### Remarques :
+* Pas de Médiaqueries : Etant donné que le but de l'exercice était de ne designer que l'aspect mobile je n'ai pas jugé utile de l'utiliser. J'ai développé avec l'écran du Device Iphone 6/7/8 du DevTool de Chrome.
+* React : J'ai utilisé react pour montrer ma manière de séparer les pages et leurs composants.
+* Sass : J'ai utilisé Sass pour simplifier la lecture du code CSS
+* Difficulté et tâche non réalisée: Je n'ai pas su modifier la couleur de la checkbox.
 
-### `npm test`
+## Comment l'utiliser en Local
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Cloner le repo et ouvrir un terminal depuis le repo cloné
+2. Lancer ``` npm install ``` dans le terminal
+3. Lancer la commande ``` npm start ```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
